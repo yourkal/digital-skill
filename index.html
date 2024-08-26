@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Section with Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">VILLAGE</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#story">OUR STORY</a></li>
+                <li><a href="#rooms">OUR ROOM</a></li>
+                <li><a href="#explore">EXPLORE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tambahkan id pada setiap section -->
+    <section id="home" class="booking-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>BOOK HERE AND GET A FREE VOUCHER</h1>
+            <p><strong>IDR 150.000 discount</strong> in one of our services: Spa, Scooter Rental or Food & Beverages.</p>
+            <p><a href="#" class="terms-link">SEE OUR TERMS AND CONDITIONS*</a></p>
+            <hr>
+            <p>If you happen to find a better online daily rate, we will match your price.</p>
+            <a href="#" class="book-now-btn">BOOK NOW</a>
+        </div>
+    </section>
+
+    <section id="story" class="story-section">
+        <div class="text-content">
+            <h2>DISCOVER OUR STORY</h2>
+            <p>Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation with an outdoor swimming pool, free private parking, a bar, and a garden.</p>
+            <div class="logo">
+                <img src="https://www.village-bali.com/wp-content/uploads/2022/09/Village-Full-Lockup-Gold-transparent-1536x523.png
+                " alt="Village Logo">
+            </div>
+        </div>
+        <div class="image-gallery">
+            <img src="https://www.village-bali.com/wp-content/uploads/2024/02/village-bali-photo-collage-1536x1229.png" alt="Story Image 1">
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms-section">
+        <h2>OUR ROOMS</h2>
+        <div class="rooms-container">
+            <div class="room">
+                <img src="https://www.village-bali.com/wp-content/uploads/2024/02/CLF07159-HDR-1024x683.jpg" alt="Deluxe Queen room">
+                <h3><a href="#" class="terms-link">Deluxe Queen room</a></h3>
+                <p>This double room has a minibar, lounge chair, private garden and air conditioning.</p>
+            </div>
+            <div class="room">
+                <img src="https://www.village-bali.com/wp-content/uploads/2024/02/CLF02584-HDR-1024x683.jpg" alt="Superior King private">
+                <h3><a href="#" class="terms-link">Superior King private</a></h3>
+                <p>This double room has a minibar, private entrance and air conditioning.</p>
+            </div>
+            <div class="room">
+                <img src="https://www.village-bali.com/wp-content/uploads/2024/02/CLF02658-HDR-1024x683.jpg" alt="King Deluxe or Twin Room with bathtub">
+                <h3><a href="#" class="terms-link">King Deluxe or Twin Room with bathtub</a></h3>
+                <p>This twin/double room features air conditioning, private entrance and minibar.</p>
+            </div>
+        </div>
+        <div class="booking-form">
+            <form>
+                <div class="form-group">
+                    <label for="checkin" style="color: black;">Check in:</label>
+                    <input type="date" id="checkin" >
+                </div>
+                <div class="form-group">
+                    <label for="checkout" style="color: black;">Check out:</label>
+                    <input type="date" id="checkout" >
+                </div>
+                <div class="form-group">
+                    <label for="promo" style="color: black;">Promo code:</label>
+                    <input type="text" id="promo" placeholder="Promo code">
+                </div>
+                <button type="submit">BOOK NOW</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="explore" class="explore-section">
+        <div class="explore-content">
+            <h3>Destination</h3>
+            <h2>Explore Uluwatu</h2>
+            <p>Attractions in the area include Uluwatu Temple, 5 km away, or Suluban Uluwatu Beach, situated 4.2 km from the property.</p>
+        </div>
+        <div class="explore-images">
+            <img src="https://www.village-bali.com/wp-content/uploads/elementor/thumbs/village-bali-website-explore-pv4q2nuzr2886qcu1icvkq4n0a88pk45x6wgovm5n8.jpg" alt="Image of Uluwatu Beach">
+            <img src="https://www.village-bali.com/wp-content/uploads/elementor/thumbs/village-bali-website-explore-1-pv4q2rmcieddh67dfjzdup6hdtppkcj39pielzgkyc.jpg" alt="Image of Uluwatu Temple">
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+    <div class="container">
+        <div class="content">
+          <h2>CONTACT US</h2>
+          <p>JI. Pemutih, Pecatu, Kec. Kuta Sel., Kabupaten Badung, Bali 80361</p>
+          <p2>E-mail: villagebali@outlook.com</p2>
+          <br>
+          <p2>Phone: </p2> +62 81237523203
+        </div>
+        <div class="content">
+          <h2>OUR STORY</h2>
+          <p>Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation with an outdoor swimming pool, free private parking, a bar and a garden.</p>
+        </div>
+        <div class="gallery">
+          <img src="https://www.village-bali.com/wp-content/uploads/sb-instagram-feed-images/346620536_638476548136319_8238576185151018870_nfull.jpg" alt="Image 1">
+          <img src="https://www.village-bali.com/wp-content/uploads/sb-instagram-feed-images/346472778_776565317247749_4261378326976482786_nfull.jpg" alt="Image 2">
+          <img src="https://www.village-bali.com/wp-content/uploads/sb-instagram-feed-images/346481750_748037480396615_8428299825668858179_nfull.jpg" alt="Image 3">
+          <img src="https://www.village-bali.com/wp-content/uploads/sb-instagram-feed-images/346606999_1119739152750191_6004393191700462325_nfull.jpg" alt="Image 4">
+        </div>
+      </div>     
+      <hr>     
+      <div class="footer">
+        <p>&copy; 2024 Village Bali</p>
+      </div>
+    </section>
+</body>
+</html>

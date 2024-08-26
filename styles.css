@@ -1,0 +1,419 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+ /* CSS untuk transisi scroll yang halus */
+ html {
+    scroll-behavior: smooth;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.fixed-content {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+/* Navbar Styles */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed;
+    width: 100%;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 2em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Booking Section Styles */
+.booking-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://www.village-bali.com/wp-content/uploads/2024/03/village-drone.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    margin: 0.5em 0;
+}
+
+.terms-link {
+    color: #e3c07b;
+    text-decoration: none;
+}
+
+.terms-link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #fff;
+    margin: 1.5em auto;
+}
+
+.book-now-btn {
+    display: inline-block;
+    padding: 0.75em 2em;
+    background-color: #8b734b;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.book-now-btn:hover {
+    background-color: #705d3a;
+}
+
+.story-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4em 2em;
+    background-color: #fff;
+}
+
+
+.text-content {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.text-content h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
+    font-family: "Open Sans Hebrew Condensed", Sans-serif;
+    font-size: 40px;
+}
+
+.text-content p {
+    font-size: 1em;
+    margin-bottom: 2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.text-content .logo img {
+    max-width: 150px;
+}
+
+.image-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Room Section Styles */
+.rooms-section {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #f8f8f4;
+}
+
+.rooms-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.rooms-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.room {
+    flex: 1;
+    margin: 0 1em;
+    text-align: center;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.room:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fefefe;
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+}
+
+.room:hover img {
+    transform: scale(1.05);
+}
+
+.room h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #6f5c3a;
+}
+
+.room p {
+    font-size: 1em;
+    color: #666;
+    padding-top: 28px;
+    font-family: "Open Sans Hebrew Condensed", Sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.booking-form {
+    padding: 24px 32px;
+    border: 1px solid #ddd;
+    margin: 32px;
+    box-shadow: 0 16px 30px #ebeef3;
+}
+
+.box-be-custom {
+    border: 1px solid #ddd;
+    padding: 24px 32px;
+    box-shadow: 0 16px 30px #ebeef3;
+    margin: 32px;
+}
+
+.form-group {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.form-group input {
+    width: 150px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+button {
+    padding: 0.7em 2em;
+    background-color: #6f5c3a;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a4b2f;
+}
+
+/* explore section */
+.explore-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em 2em;
+    background-color: #fff;
+}
+
+.explore-content {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.explore-content h3 {
+    font-size: 1.2em;
+    color: #999;
+    margin-bottom: 0.5em;
+}
+
+.explore-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.explore-content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5em;
+}
+
+.explore-images {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* footer section */
+body {
+    background-color: #222;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .content {
+    width: 50%;
+    margin-right: 50px;
+  }
+  .content p2{
+    font-family: "Open Sans Hebrew Condensed", Sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    color: #b59f6b;
+  }
+  
+  .gallery {
+    width: 15%;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .social {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .social a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ddd;
+    text-decoration: none;
+  }
