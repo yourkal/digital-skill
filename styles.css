@@ -18,12 +18,12 @@ body, html {
 
 .fixed-content {
     padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    overflow-y: scroll;
+    /* Remove the fixed positioning to allow the content to flow normally */
+    position: relative;
+    overflow-y: auto;
     overflow-x: hidden;
 }
+
 
 
 /* Navbar Styles */
@@ -39,7 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
+    padding: 20px 20px;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     position: fixed;
     width: 100%;
@@ -57,7 +57,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin: 10px 30px;
 }
 
 .nav-links li {
